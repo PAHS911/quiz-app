@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Main from './components/Main'
-import Quiz from './components/Quiz'
-import Result from "./components/Result";
+import Main from './components/Main.jsx'
+import Quiz from './components/Quiz.jsx'
+import Result from "./components/Result.jsx";
+
 
 /**
  * react routes
@@ -9,21 +10,21 @@ import Result from "./components/Result";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main/>,
+    element:<Main></Main>,
   },
   {
     path: "/quiz",
-    element: <Quiz/>,
+    element:<Quiz></Quiz>,
   },
   {
     path: "/result",
-    element: <Result/>,
+    element: <Result></Result>,
   },
 ]);
 function App() {
   return (
     <>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
     </>
   );
 }
