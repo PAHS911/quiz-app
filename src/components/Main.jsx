@@ -30,7 +30,7 @@ function Main() {
 
         <div className="mt-9 p-">
           <Link
-            className=" px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none hover:shadow-xl  "
+            className=" px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none "
             to={"quiz"}>
             Start Quiz
           </Link>

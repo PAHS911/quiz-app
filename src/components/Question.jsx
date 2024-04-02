@@ -17,7 +17,7 @@ const Question = () => {
   return (
     <>
     
-      <h2 className="text-white pt-9 text-2xl">{question.question}</h2>
+      <h2 className="text-white pt-9  text-2xl">{question.question}</h2>
 
       <ul key={question.id}>
        {

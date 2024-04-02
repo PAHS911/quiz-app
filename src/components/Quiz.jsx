@@ -18,10 +18,10 @@ const Quiz = () => {
       <Question />
 
       <div className="w-80 pt-9 flex justify-between">
-        <button className="text-white" onClick={onPrev}>
+        <button className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none" onClick={onPrev}>
           Prev
         </button>
-        <button className="text-white" onClick={onNext}>
+        <button className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none" onClick={onNext}>
           Next
         </button>
       </div>
