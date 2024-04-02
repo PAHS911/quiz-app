@@ -20,7 +20,7 @@ const Result = () => {
           </div>
           <div className="flex  justify-between">
             <span className="">Total Quiz Points :</span>
-            <span className="flex  justify-between">50</span>
+            <span className="">50</span>
           </div>
           <div className="flex  justify-between">
             <span className="">Total Questions :</span>
@@ -44,7 +44,7 @@ const Result = () => {
           <Link
             onClick={onRestart}
             to={"/"}
-            className="   px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none">
+            className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none">
             Restart
           </Link>
         </div>
