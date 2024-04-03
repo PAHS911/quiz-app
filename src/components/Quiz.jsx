@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Question";
 import Question from "./Question";
 
+/**redux store import  */
+import { useSelector } from "react-redux";
 
 const Quiz = () => {
+  const state = useSelector(state => state);
+
+  useEffect(() => {
+    console.log(state);
+  });
+
+  /**next button handler */
   function onNext() {
     console.log("next");
   }
 
+  /**prev button handler */
   function onPrev() {
     console.log("prev");
   }
@@ -18,14 +28,17 @@ const Quiz = () => {
       <Question />
 
       <div className="w-80 pt-9 flex justify-between">
-        <button className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none" onClick={onPrev}>
+        <button
+          className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none"
+          onClick={onPrev}>
           Prev
         </button>
-        <button className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none" onClick={onNext}>
+        <button
+          className="px-7 py-3 rounded-full  bg-white text-black cursor-pointer  border-none"
+          onClick={onNext}>
           Next
         </button>
       </div>
-     
     </section>
   );
 };

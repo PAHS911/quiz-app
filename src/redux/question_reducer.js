@@ -1,4 +1,4 @@
-import { createSlice, crreateSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 /**create reducer */
 export const questionReducer = createSlice({

@@ -7,11 +7,11 @@ const Question = () => {
   const question= Data [0]
 
   useEffect(( ) =>{
-    console.log(question)
+    
   })
 
   function onSelect() {
-    console.log("radio button change");
+    
   }
 
   return (
